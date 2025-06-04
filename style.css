@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+
+h3{
+  text-align: center;
+  width: 325px;
+  font-family: orbitron;
+  font-size: 14px;
+  background-color: #121213;
+  color: #40dde3;
+  border: 1px solid #40dde3;
+  padding: 10px 0;
+  border-radius: 50px;
+  margin: 80px auto;
+}
+
+
+
+
 .nav_bg {
   background-color: #1e1e20;
 }
@@ -13,6 +30,7 @@
   background-color: #40dde3;
   font-family: orbitron;
   font-weight: 900;
+  font-size: 18px;
   border-radius: 5px;
 }
 
@@ -23,7 +41,7 @@
 }
 
 .img_logo {
-  width: 100px;
+  width: 150px;
 }
 
 .banner {
@@ -399,18 +417,43 @@ p {
 
 
 /*? Q & A */
+.faq{
+  width: 1532px; margin: 50px auto
+}
+
+.faq h3{
+  width:123px ;
+}
+
+.faq_text{
+  text-align: center;
+  font-size: 25px;
+  font-family: "DM Sans", sans-serif;
+  width: 1272px;
+  margin: 0 auto 50px;
+}
+
 
 .accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   width: 100%;
-  max-width: 600px;
-  background: #121212;
+  max-width: 1532px;
   color: #fff;
-  border-radius: 8px;
   font-family: Arial, sans-serif;
 }
 
 .accordion-item {
-  border-bottom: 1px solid #333;
+  border: 1px solid #404040;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  align-self: start; /* ✨ Prevent row syncing/stretching */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  box-shadow: 1px 20px 50px rgba(0, 0, 0, 0.7);
 }
 
 .accordion-header {
@@ -419,33 +462,89 @@ p {
   padding: 16px;
   background: #1a1a1a;
   color: #00ffe0;
-  font-size: 1rem;
+  font-size: 23px;
   border: none;
   outline: none;
   cursor: pointer;
   position: relative;
+  border-radius: 10px;
 }
 
 .accordion-header::after {
   content: "+";
   position: absolute;
   right: 20px;
+  color: white;
   transition: transform 0.3s ease;
 }
 
 .accordion-header.active::after {
-  content: "×"; /* You can use "-" or "▲" instead */
+  content: "×";
+  color: #00ffe0;
 }
 
 .accordion-body {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  background: #222;
+  transition: max-height 0.3s ease;
+  background: #1a1a1a;
   padding: 0 16px;
+  font-size: 18px;
+  border-radius: 10px;
 }
 
 .accordion-body.open {
   padding: 16px;
+}
+
+
+.foot{
+  font-family: orbitron;
+  font-size: 65px;
+    width: 1186px;
+  margin: 50px auto;
+  background: linear-gradient(to right, #292929, #FFFFFF, #676767, #FFFFFF);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+ 
+  
+}
+
+.earn{
+  position: relative;
+}
+
+.notify2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 525px;
+  background-color: #18181a;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.notify2 input {
+  background-color: #18181a;
+  border: none;
+  font-size: 26px;
+}
+
+.notify2 input ::placeholder {
+  color: white;
+}
+
+.notify2 button {
+  background-color: #40dde3;
+  font-family: orbitron;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.foot_notify{
+  position: absolute;
+  bottom: 0;
+  right: 250px;
 }
 
